@@ -62,19 +62,10 @@
                     <view key="view" contentMode="scaleToFill" id="pyc-7w-cWq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZO-5f-E0n" customClass="BackgroundProgressView" customModule="Curtain_Example" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="266" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="drR-35-UuB"/>
                     </view>
                     <navigationItem key="navigationItem" id="FUn-U7-6bq"/>
-                    <connections>
-                        <outlet property="backgroundProgressView" destination="PZO-5f-E0n" id="MZY-uu-7vz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjQ-zV-QUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

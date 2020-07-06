@@ -14,7 +14,7 @@ import UIKit
 
 class BackgroundViewController: UIViewController {
     
-    @IBOutlet weak var backgroundProgressView: BackgroundProgressView!
+    var backgroundProgressView: BackgroundProgressView!
     
     // Background animation direction type: .vertical or .horizontal
     var direction: DirectionType!
@@ -30,9 +30,29 @@ extension BackgroundViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Create and add progress view
+        backgroundProgressView = BackgroundProgressView.init(frame:
+            CGRect.init(
+                x: 0,
+                y: 0,
+                width: 0,
+                height: 0
+        ))
+        
+        view.addSubview(backgroundProgressView)
         
         // Setup your progress view here
-        backgroundProgressView.setup(withDirection: direction, withTime: 15, view: view.frame, color: UIColor.init(red: 157/255, green: 226/255, blue: 150/255, alpha: 1.0))
+        backgroundProgressView.setup(
+            withDirection: direction,
+            withTime: 3,
+            view: view.frame,
+            color: UIColor.init(red: 109/255, green: 212/255, blue: 0/255, alpha: 1.0),
+            initialSize: 0,
+            autoreset: true,
+            resetType: .linear
+        )
+        
+//        backgroundProgressView.setup(withDirection: direction, withTime: 3, view: view.frame, color: UIColor.init(red: 30/255, green: 150/255, blue: 182/255, alpha: 1.0))
         
         // Hide navigation bar
         navigationController?.navigationBar.topItem?.titleView = UIView.init()
@@ -50,7 +70,7 @@ extension BackgroundViewController {
         super.viewDidAppear(animated)
         
         // Start progress view
-        backgroundProgressView.start()
+        backgroundProgressView.start(withTime: <#T##Double?#>)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
