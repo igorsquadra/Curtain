@@ -32,7 +32,16 @@ extension BackgroundViewController {
         
         
         // Setup your progress view here
-        backgroundProgressView.setup(withDirection: direction, withTime: 15, view: view.frame, color: UIColor.init(red: 157/255, green: 226/255, blue: 150/255, alpha: 1.0))
+        backgroundProgressView.setup(
+            withDirection: direction,
+            withTime: 3,
+            view: view.frame,
+            color: UIColor.init(red: 109/255, green: 212/255, blue: 0/255, alpha: 1.0),
+            autoreset: true,
+            resetType: .linear
+        )
+        
+//        backgroundProgressView.setup(withDirection: direction, withTime: 3, view: view.frame, color: UIColor.init(red: 30/255, green: 150/255, blue: 182/255, alpha: 1.0))
         
         // Hide navigation bar
         navigationController?.navigationBar.topItem?.titleView = UIView.init()
