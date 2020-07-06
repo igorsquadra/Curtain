@@ -29,7 +29,7 @@ Really easy to implement, use the available options to customize the background 
 
 <img src="https://raw.githubusercontent.com/igorsquadra/Curtain/develop/Curtain/Assets/Vertical.gif" alt="Example Application Screenshot">
 
-<img src="https://raw.githubusercontent.com/igorsquadra/Curtain/develop/Curtain/Assets/Horizontal.gif" alt="Example Application Screenshot">
+<img src="https://raw.githubusercontent.com/igorsquadra/Curtain/develop/Curtain/Assets/Horizontal.gif" alt="Example Application Screenshot" align="right">
 
 Use `Curtain` to animate your timer. Customize your exit animation and background color to make the user experience way better. Use it in two different direction: vertical or horizontal.
 
