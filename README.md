@@ -21,3 +21,12 @@
 </p>
 
 <br/>
+
+`Curtain` is a swift pod that helps you implementing a nice background animation for your timer.
+Really easy to implement, use the available options to customize the background color, the background filling direction, and the exit animation.
+
+## Example
+
+<img style="float: right" src="https://raw.githubusercontent.com/SvenTiigi/FlyoverKit/gh-pages/readMeAssets/FlyoverKitExampleApplication.gif" alt="Example Application Screenshot" align="right" width="307">
+
+The example Application is an excellent way to see `FlyoverKit` in action. You get a brief look of the available configuration options and how they affect the flyover behaviour. Simply open the `FlyoverKit.xcodeproj` and run the `FlyoverKit-Example` scheme. Please keep in mind that the `SatelliteFlyover` and `HybridFlyover` will only work on a real iOS device.
