@@ -1,5 +1,5 @@
 //
-//  VerticalBackgroundViewController.swift
+//  BackgroundViewController.swift
 //  Curtain_Example
 //
 //  Created by Igor Squadra on 06/07/2020.
@@ -12,15 +12,18 @@ import UIKit
 
 // MARK: - Instance vars and IBOutlets
 
-class VerticalBackgroundViewController: UIViewController {
+class BackgroundViewController: UIViewController {
     
     @IBOutlet weak var backgroundProgressView: BackgroundProgressView!
+    
+    // Background animation direction type: .vertical or .horizontal
+    var direction: DirectionType!
 }
 
 
 // MARK: - Essentials
 
-extension VerticalBackgroundViewController {
+extension BackgroundViewController {
     
     // MARK: View lifecycle
     
@@ -28,7 +31,13 @@ extension VerticalBackgroundViewController {
         super.viewDidLoad()
         
         
+        // Setup your progress view here
+        backgroundProgressView.setup(withDirection: direction, withTime: 15, view: view.frame, color: UIColor.init(red: 157/255, green: 226/255, blue: 150/255, alpha: 1.0))
         
+        // Hide navigation bar
+        navigationController?.navigationBar.topItem?.titleView = UIView.init()
+        navigationController?.navigationBar.setBackgroundImage(UIImage.init(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage.init()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +49,8 @@ extension VerticalBackgroundViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
+        // Start progress view
+        backgroundProgressView.start()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -71,4 +81,3 @@ extension VerticalBackgroundViewController {
         
     }
 }
-

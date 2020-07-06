@@ -121,24 +121,28 @@ extension BackgroundProgressView {
             self.time = newTime
         }
 
-        updatingTimer = Timer.scheduledTimer(withTimeInterval: updatingTimeInterval, repeats: true, block: { (timer) in
-            
-            self.counter += 1
-            
-            guard self.counter <= Int(self.time!/self.updatingTimeInterval) else {
-                timer.invalidate()
+        if #available(iOS 10.0, *) {
+            updatingTimer = Timer.scheduledTimer(withTimeInterval: updatingTimeInterval, repeats: true, block: { (timer) in
                 
-                if self.isAutoResetActive {
+                self.counter += 1
+                
+                guard self.counter <= Int(self.time!/self.updatingTimeInterval) else {
+                    timer.invalidate()
+                    
+                    if self.isAutoResetActive {
                         
-                    self.resetView()
+                        self.resetView()
+                    }
+                    
+                    return
                 }
                 
-                return
-            }
-            
-            // Update progress view
-            self.updateView(withProgress: self.singleFrameSize)
-        })
+                // Update progress view
+                self.updateView(withProgress: self.singleFrameSize)
+            })
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     

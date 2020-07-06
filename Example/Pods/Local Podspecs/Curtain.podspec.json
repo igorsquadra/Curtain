@@ -1,0 +1,22 @@
+{
+  "name": "Curtain",
+  "version": "0.1.0",
+  "summary": "A short description of Curtain.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/igorsquadra/Curtain",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "igorsquadra": "igor.squadra@21ilab.com"
+  },
+  "source": {
+    "git": "https://github.com/igorsquadra/Curtain.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Curtain/Classes/**/*"
+}

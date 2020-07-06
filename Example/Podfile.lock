@@ -1,0 +1,16 @@
+PODS:
+  - Curtain (0.1.0)
+
+DEPENDENCIES:
+  - Curtain (from `../`)
+
+EXTERNAL SOURCES:
+  Curtain:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Curtain: 0f23a3c381d63393c51697e3ee7106ed1f01c13a
+
+PODFILE CHECKSUM: c854e318a395503554475fef387d952e416f2e56
+
+COCOAPODS: 1.9.1
