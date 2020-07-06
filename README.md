@@ -27,6 +27,8 @@ Really easy to implement, use the available options to customize the background 
 
 ## Example
 
-<img style="float: right" src="https://raw.githubusercontent.com/SvenTiigi/FlyoverKit/gh-pages/readMeAssets/FlyoverKitExampleApplication.gif" alt="Example Application Screenshot" align="right" width="307">
+<img style="float: right" src="https://raw.githubusercontent.com/igorsquadra/Curtain/develop/Curtain/Assets/Vertical.gif" alt="Example Application Screenshot" align="right" width="307">
 
-The example Application is an excellent way to see `FlyoverKit` in action. You get a brief look of the available configuration options and how they affect the flyover behaviour. Simply open the `FlyoverKit.xcodeproj` and run the `FlyoverKit-Example` scheme. Please keep in mind that the `SatelliteFlyover` and `HybridFlyover` will only work on a real iOS device.
+<img style="float: right" src="https://raw.githubusercontent.com/igorsquadra/Curtain/develop/Curtain/Assets/Horizontal.gif" alt="Example Application Screenshot" align="right" width="307">
+
+Use `Curtain` to animate your timer. Customize your exit animation and background color to make the user experience way better. Use it in two different direction: vertical or horizontal
