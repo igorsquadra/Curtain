@@ -36,8 +36,4 @@ Super easy to implement, use the available options to customize the background c
   # s.resource_bundles = {
   #   'Curtain' => ['Curtain/Assets/*.png']
   # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
