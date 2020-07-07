@@ -15,9 +15,6 @@
     <a href="http://cocoapods.org/pods/Curtain">
         <img src="https://img.shields.io/cocoapods/p/Curtain.svg?style=flat" alt="Platform">
     </a>
-    <a href="https://igorsquadra.github.io/Curtain">
-        <img src="https://github.com/igorsquadra/Curtain" alt="Documentation">
-    </a>
 </p>
 
 <br/>
