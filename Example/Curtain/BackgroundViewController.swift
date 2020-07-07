@@ -70,7 +70,7 @@ extension BackgroundViewController {
         super.viewDidAppear(animated)
         
         // Start progress view
-        backgroundProgressView.start(withTime: <#T##Double?#>)
+        backgroundProgressView.start()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
