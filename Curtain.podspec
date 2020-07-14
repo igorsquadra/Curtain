@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Curtain'
-  s.version          = '1.1'
+  s.version          = '1.2'
   s.summary          = 'A nice customizable background animation with timer'
   s.swift_version    = '5.0'
 
