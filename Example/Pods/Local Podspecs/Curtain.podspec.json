@@ -1,22 +1,24 @@
 {
   "name": "Curtain",
-  "version": "0.1.0",
-  "summary": "A short description of Curtain.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0",
+  "summary": "A nice customizable background animation with timer",
+  "swift_versions": "5.0",
+  "description": "Curtain is a swift pod that helps you implementing a nice background animation for your timer.\nSuper easy to implement, use the available options to customize the background color, the background filling direction, and the exit animation.",
   "homepage": "https://github.com/igorsquadra/Curtain",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "igorsquadra": "igor.squadra@21ilab.com"
+    "igorsquadra": "me@igorsquadra.com"
   },
   "source": {
     "git": "https://github.com/igorsquadra/Curtain.git",
-    "tag": "0.1.0"
+    "tag": "1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "Curtain/Classes/**/*"
+  "source_files": "Curtain/**/*",
+  "swift_version": "5.0"
 }

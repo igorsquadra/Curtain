@@ -10,17 +10,17 @@ import Foundation
 import UIKit
 
 
-enum DirectionType {
+public enum DirectionType {
     case horizontal
     case vertical
 }
 
-enum ResetType {
+public enum ResetType {
     case fade
     case linear
 }
 
-final class BackgroundProgressView: UIView {
+public class BackgroundProgressView: UIView {
     
     /// Progress view direction, should be `horizontal` (from left to right) or `vertical` (from top to bottom).
     private var direction = DirectionType.horizontal
@@ -58,14 +58,13 @@ final class BackgroundProgressView: UIView {
         }
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-    }
-    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
     }
 }
 

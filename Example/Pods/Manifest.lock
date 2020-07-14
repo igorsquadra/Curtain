@@ -1,5 +1,5 @@
 PODS:
-  - Curtain (0.1.0)
+  - Curtain (1.0)
 
 DEPENDENCIES:
   - Curtain (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Curtain: 0f23a3c381d63393c51697e3ee7106ed1f01c13a
+  Curtain: ac96059eeecd2af506426bf3dc0d0e375e83b706
 
 PODFILE CHECKSUM: c854e318a395503554475fef387d952e416f2e56
 

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+import Curtain
+
 
 // MARK: - Instance vars and IBOutlets
 
@@ -38,6 +40,8 @@ extension BackgroundViewController {
                 width: 0,
                 height: 0
         ))
+        
+        
         
         view.addSubview(backgroundProgressView)
         
