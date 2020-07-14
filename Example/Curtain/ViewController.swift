@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Curtain
+
 
 // MARK: - Instance vars and IBOutlets
 
