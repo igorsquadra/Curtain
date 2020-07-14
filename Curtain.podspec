@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Curtain'
-  s.version          = '1.2'
+  s.version          = '1.3'
   s.summary          = 'A nice customizable background animation with timer'
   s.swift_version    = '5.0'
 
@@ -31,7 +31,7 @@ Super easy to implement, use the available options to customize the background c
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'Curtain/**/*'
+  s.source_files = 'Curtain/Classes/**/*'
   
   # s.resource_bundles = {
   #   'Curtain' => ['Curtain/Assets/*.png']
